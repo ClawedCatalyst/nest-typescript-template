@@ -1,0 +1,28 @@
+{
+  "main": "server.ts",
+  "scripts": {
+    "start": "npm run build && node build/server.js",
+    "dev": "nodemon server.ts",
+    "build": "rm -rf build/ && prettier --write src/ && tsc"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.10.7",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@nestjs/config": "^4.0.0",
+    "@nestjs/core": "^11.0.4",
+    "@nestjs/platform-express": "^11.0.4",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "nestjs-cls": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "uuid": "^11.0.5"
+  }
+}
